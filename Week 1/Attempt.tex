@@ -1,6 +1,16 @@
-\documentclass{article}
+\documentclass[17 pt]{extarticle}
 
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+
+\newlength{\myeqskip}  \setlength{\myeqskip}{15pt}
+\AtBeginDocument{%
+    \setlength\abovedisplayskip{\myeqskip}%
+    \setlength\belowdisplayskip{\myeqskip}%
+    \setlength\abovedisplayshortskip{\myeqskip-\baselineskip}%
+    \setlength\belowdisplayshortskip{\myeqskip}}
+
+    \setlength{\jot}{10pt}
 
 \title{Week 1 Tutorial Attempt}
 \author{XK}
@@ -8,14 +18,94 @@
 
 \begin{document}
 
+
 \maketitle
 
 \tableofcontents
 
-\section{Q1}
+\newpage
+\section{Question 1}
 
-\subsection*{If $f(x) = 2x^3-x$, find $f(-1),f(0),f(x^2),f(\sqrt(x)), f(\frac{1}{x})$}
+\subsection*{If $f(x) = 2x^3-x$, find $f(-1),f(0),f(x^2),f(\sqrt x), f(\frac{1}{x})$}
+\vspace{10mm}
+\subsection*{Answer:}
 
+Just substitute the numbers accordingly
+\begin{equation*}
+\begin{split}
+    f(-1) &= 2(-1)^3 - (-1) \\
+    & = 2(-1) + 1 \\
+    &= -2 + 1 \\
+    &= -1 \; \; \blacksquare
+\end{split}
+\end{equation*}
 
+\begin{equation*}
+    \begin{split}
+        f(0) &= 2(0)^3 - (0) \\
+        & = 2(0) \\
+        &= 0 \; \; \blacksquare
+    \end{split}
+    \end{equation*}
 
+\begin{equation*}
+        \begin{split}
+            f(x^2) &= 2(x^2)^3 - (x^2) \\
+            & = 2(x^6) - x^2 \\
+            &= 2x^6 - x^2 \\
+            &= x^2(2x^4 - 1) \; \; \blacksquare
+        \end{split}
+\end{equation*}
+
+\begin{equation*}
+    \begin{split}
+        f(\sqrt x) &= 2(\sqrt x)^3 - (\sqrt x) \\
+        & = 2(x^ \frac{3}{2}) - \sqrt x \\
+        &= 2x^ \frac{3}{2} - x^ \frac{1}{2} \\
+        &= x^ \frac{1}{2} (2x - 1) \; \; \blacksquare
+    \end{split}
+\end{equation*}
+
+\begin{equation*}
+    \begin{split}
+        f \biggl \lparen \frac{1}{x} \biggr \rparen &= 2\biggl \lparen \frac{1}{x^3} \biggr \rparen - \biggl \lparen \frac{1}{x} \biggr \rparen \\
+        & = 2 \biggl \lparen \frac{1}{x^3} \biggr \rparen - \frac{1}{x} \\
+        &= \frac{2}{x^3} - \frac{1}{x} \\
+        &= \frac{1}{x} \biggl \lparen \frac{2}{x^2} - 1 \biggr \rparen \; \; \blacksquare
+    \end{split}
+\end{equation*}
+
+\newpage
+\section{Question 2}
+
+\subsection*{If $f(x) = \begin{cases} x^2+1, & \text{if } x \leq 0 \\
+\sqrt x, & \text{if } x > 0 \end{cases}$, find $f(-2), f(0)$ and $f(1)$}
+
+\vspace{10mm}
+
+\subsection*{Answer:}
+
+Same as Q1, proper substitution needs to be performed here. 
+\begin{equation*}
+    \begin{split}
+        f(-2) &= 2(-2)^2 + 1 \; \; \; \textit{$x <  0$ hence take 1st option} \\
+        & = 2(4) + 1 \\
+        &= 7 \; \; \blacksquare
+    \end{split}
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{split}
+            f(0) &= 2(0)^2 + 1 \; \; \; \textit{$x = 0$ hence take 1st option} \\
+            &= 1 \; \; \blacksquare
+        \end{split}
+        \end{equation*}
+
+        \begin{equation*}
+            \begin{split}
+                f(1) &= 2(1)^2 + 1 \; \; \; \textit{$x > 0$ hence take 2nd option} \\
+                &= 2(1) + 1 \\
+                &= 3 \; \; \blacksquare
+            \end{split}
+            \end{equation*}
 \end{document}
