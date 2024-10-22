@@ -116,20 +116,21 @@ Same as Q1, proper substitution needs to be performed here.
 \vspace{10mm}
 \subsection*{Answer}
 
-Honestly, I have a problem with this question. Specifically the first function. There no indication of what the field is. Is it $\mathbb{R}$ or $\mathbb{C}$ field, as 
-such I'll write both fields for both the first and second functions. Going forward, the domain is just what numbers can fit into this function to produce an output. 
+Honestly, I have a problem with this question. There is no indication of what the field is. Is it $\mathbb{R}$ or $\mathbb{C}$ field? Or is it only for $\mathbb{N}$? But most likely it will be either real or complex field. As 
+such I'll write both fields for this question. Going forward, the domain is just what numbers can fit into this function to produce an output within the field.
 
 \begin{equation*}
     \begin{split}
         f(x) =\sqrt{x-2} + \sqrt{4-x} \\
         \mathbb{C} \; \text{field for domain:} (- \infty, \infty) \\
-        \mathbb{R} \; \text{field for domain:} [2,4]
+        \mathbb{R} \; \text{field for domain:} [2,4] \\
+         \blacksquare
     \end{split}
     \end{equation*}
 
 So in the complex field, we don't care. Honestly, the square roots means nothing. You might as well eat them. But once we reached the 
-real field, $\sqrt{x}$ matters more to us. Looking at the first part of $\sqrt{x-2}, \; x-2 > 0$ for the real answersw hence $x>2$. Now onto the second part, $\sqrt{4-x}, \;
-4-x > 0$ hence $x>4$. This only leaves us with the domain between 2 and 4 or $ [2,4] $
+real field, $\sqrt{x}$ matters more to us. Looking at the first part of $\sqrt{x-2}, \; x-2 \leq 0$ for the real answersw hence $x>=2$. Now onto the second part, $\sqrt{4-x}, \;
+4-x \geq 0$ hence $x>4$. This only leaves us with the domain between 2 and 4 or $ [2,4] $
 
 \vspace{5mm}
 
@@ -145,8 +146,20 @@ real field, $\sqrt{x}$ matters more to us. Looking at the first part of $\sqrt{x
 
 \begin{equation*}
     \begin{split}
-        \mathbb{C} \; \text{field for domain:} (- \infty, -1) \cup (1, \infty) \\
-        \mathbb{R} \; \text{field for domain:} (- \infty, -2] \cup [2, \infty) \\
+        \mathbb{C} \; \text{field for domain:} \; \mathbb{R} \neq -1,0,1 \\
+        \mathbb{R} \; \text{field for domain:} \; [-2,2] \neq -1, 0, \\ \blacksquare 
     \end{split}
     \end{equation*}
+
+This function is a little bit more ugly. Fractions with variables as the denominator are always going to have some problems. So even in the complex field, 
+we need to take note of the denominator. I factorised $ x^3-x $ to $ x(x+1)(x-1)$ such that any of these values cannot hit 0. As such, we can have any values except from -1 to 1.
+Since we cannot have -1 or 1, we need to use open intervals (). And I just remembered, the values between -1 to 1 are valid except for 0, which means more more unions. But that's stupid.
+Instead, I'll write out the three invalid numbers within here. 
+
+\vspace{5mm}
+
+For the real field, it is easier. Just need the values inside the square roots to not be negative. So $ x+2 \geq 0 => x \geq -2 \newline 2-x \leq 0  => 2 \leq x $. This gives us 
+the closed range of $ [-2 \leq x \leq 2]$. So all we have to do is exclude the same values as before and we're done. So tiring, isn't it?
+
+
 \enddocument{}
